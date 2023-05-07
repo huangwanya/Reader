@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/edittext_selector"
+    android:orientation="vertical" >
+     <RelativeLayout
+      android:id="@+id/re1"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_gravity="center_vertical"
+            android:background="#009966"
+            android:orientation="horizontal"
+            android:paddingLeft="3.0dip"
+            android:paddingRight="3.0dip" >
+
+            <TextView
+                android:id="@+id/top_back"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/topback" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:layout_marginRight="20dp"
+                android:text="最新项目"
+                android:textColor="#ffffffff"
+                android:textSize="36px"
+                />
+        </RelativeLayout>
+
+     <TextView
+         android:id="@+id/time"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textSize="20.0sp"
+         android:padding="20dp"
+         android:textColor="@color/home_qianhui"
+         android:text="TextView" />
+
+     <TextView
+         android:id="@+id/context"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:padding="10dp"
+         android:textSize="32px"
+         android:textColor="#333333"
+         android:text="TextView" />
+
+</LinearLayout>

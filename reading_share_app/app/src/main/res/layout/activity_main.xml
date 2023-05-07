@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+<!-- 主界面 -->
+<TabHost 
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+
+        <!-- tab bar buttons -->
+        <RadioGroup
+            android:id="@+id/main_tab_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+        android:background="#F8F8FF"
+            android:orientation="horizontal"
+            android:paddingTop="0.0dip">
+
+            <RadioButton
+                android:id="@+id/main_tab_home"
+                style="@style/MyTabButton"
+                android:checked="true"
+                android:drawableTop="@drawable/main_index_home_bg"
+                android:text="首页"
+                android:textSize="26px" />
+
+            <RadioButton
+                android:id="@+id/main_tab_type"
+                style="@style/MyTabButton"
+                android:drawableTop="@drawable/main_index_type_bg"
+                android:textSize="26px"
+                android:text="好友"
+                 />
+			
+             <RadioButton
+                 android:id="@+id/main_tab_mystore"
+                style="@style/MyTabButton"
+                android:drawableTop="@drawable/main_index_mystore_bg"
+                 android:textSize="26px"
+                android:text="个人中心" />
+                 <RadioButton
+                android:id="@+id/main_tab_cart"
+                style="@style/MyTabButton"
+                     android:visibility="gone"
+                android:drawableTop="@drawable/main_index_news_bg"
+                     android:textSize="20dp"
+                     android:textStyle="italic|bold"
+                android:text="阅读分享活动推荐" />
+        </RadioGroup>
+    </LinearLayout>
+</TabHost>
+</LinearLayout>

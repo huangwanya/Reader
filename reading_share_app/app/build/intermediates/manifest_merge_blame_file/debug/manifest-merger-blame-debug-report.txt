@@ -1,0 +1,373 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.blueberry.activity"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+11-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:8:5-75
+11-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:8:22-72
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:9:5-79
+12-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:9:22-76
+13    <uses-permission android:name="android.permission.READ_CONTACTS" />
+13-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:10:5-72
+13-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:10:22-69
+14    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+14-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:11:5-76
+14-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:11:22-73
+15    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+15-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:12:5-75
+15-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:12:22-72
+16    <uses-permission android:name="android.permission.INTERNET" />
+16-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:13:5-67
+16-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:13:22-64
+17
+18    <uses-feature android:name="android.hardware.camera" />
+18-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:16:5-60
+18-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:16:19-57
+19    <uses-feature android:name="android.hardware.camera.autofocus" />
+19-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:17:5-70
+19-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:17:19-67
+20
+21    <uses-permission android:name="android.permission.VIBRATE" />
+21-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:18:13-74
+21-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:18:30-71
+22    <!-- 往SDCard写入数据权限 -->
+23    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+23-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:20:5-81
+23-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:20:22-78
+24    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+24-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:21:5-84
+24-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:21:22-81
+25    <uses-permission android:name="android.permission.REORDER_TASKS" />
+25-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:22:5-72
+25-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:22:22-69
+26    <uses-permission android:name="android.permission.CAMERA" />
+26-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:23:5-65
+26-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:23:22-62
+27    <!-- 唤醒屏幕并解锁 -->
+28    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+28-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:25:5-75
+28-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:25:22-72
+29    <uses-permission android:name="android.permission.WAKE_LOCK" />
+29-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:26:5-68
+29-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:26:22-65
+30    <!-- 发送短信权限 -->
+31    <uses-permission android:name="android.permission.GET_TASKS" />
+31-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:28:5-68
+31-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:28:22-65
+32    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+32-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:29:5-76
+32-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:29:22-73
+33    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+33-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:30:5-74
+33-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:30:22-71
+34    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+34-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:31:5-71
+34-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:31:22-68
+35    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+35-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:32:5-81
+35-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:32:22-78
+36    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+36-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:33:5-79
+36-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:33:22-76
+37    <!-- 生成桌面快捷方式权限 -->
+38    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+38-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:35:5-85
+38-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:35:22-82
+39    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+39-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:36:5-88
+39-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:36:22-85
+40    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+40-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:37:5-90
+40-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:37:22-87
+41
+42    <application
+42-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:39:5-179:19
+43        android:name="com.common.util.MyApp"
+43-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:40:9-45
+44        android:allowBackup="true"
+44-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:41:9-35
+45        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+45-->[com.android.support:support-compat:28.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\f14724208b5bfeeef0d6bdefe649bca7\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+46        android:debuggable="true"
+47        android:icon="@drawable/car_logo"
+47-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:42:9-42
+48        android:label="@string/app_name"
+48-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:43:9-41
+49        android:testOnly="true"
+50        android:theme="@style/AppTheme.NoActionBar" >
+50-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:44:9-52
+51        <activity
+51-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:45:9-48:20
+52            android:name="com.common.activity.CommentsList"
+52-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:46:13-60
+53            android:label="@string/app_name" >
+53-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:47:13-45
+54        </activity>
+55        <activity android:name="com.common.activity.StartActivity" >
+55-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:49:9-55:20
+55-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:49:19-67
+56            <intent-filter>
+56-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:50:13-54:29
+57                <action android:name="android.intent.action.MAIN" />
+57-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:51:17-69
+57-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:51:25-66
+58
+59                <category android:name="android.intent.category.LAUNCHER" />
+59-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:53:17-77
+59-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:53:27-74
+60            </intent-filter>
+61        </activity>
+62
+63        <meta-data
+63-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:57:9-59:64
+64            android:name="com.baidu.lbsapi.API_KEY"
+64-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:58:13-52
+65            android:value="RLXx7wEbmyzcFTYsuxOeXjK5Vsh7Fj1c" />
+65-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:59:13-61
+66
+67        <service
+67-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:61:9-65:19
+68            android:name="com.baidu.location.f"
+68-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:62:13-48
+69            android:enabled="true"
+69-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:63:13-35
+70            android:process=":remote" >
+70-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:64:13-38
+71        </service>
+72
+73        <activity android:name="baidumap.PoiSearchDemo" >
+73-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:67:9-68:20
+73-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:67:19-56
+74        </activity>
+75        <activity android:name="com.common.activity.MyTieziList" >
+75-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:69:9-70:20
+75-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:69:19-65
+76        </activity>
+77        <activity android:name="com.common.activity.MainActivity" >
+77-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:71:9-72:20
+77-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:71:19-66
+78        </activity>
+79        <activity android:name="com.common.activity.AddNews" >
+79-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:73:9-74:20
+79-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:73:19-61
+80        </activity>
+81        <activity android:name="baidumap.LocationDemo" >
+81-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:75:9-76:20
+81-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:75:19-55
+82        </activity>
+83        <activity android:name="com.common.activity.Login" >
+83-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:77:9-78:20
+83-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:77:19-59
+84        </activity>
+85        <activity android:name="com.common.activity.FriendsList" >
+85-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:79:9-80:20
+85-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:79:19-65
+86        </activity>
+87        <activity android:name="com.common.activity.MeActivity" >
+87-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:81:9-82:20
+87-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:81:19-64
+88        </activity>
+89        <activity android:name="com.common.activity.BarCodeActivity" >
+89-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:83:9-84:20
+89-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:83:19-69
+90        </activity>
+91        <activity android:name="com.common.activity.AddMessage" >
+91-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:85:9-86:20
+91-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:85:19-64
+92        </activity>
+93        <activity android:name="com.common.activity.HuodongList" >
+93-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:87:9-88:20
+93-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:87:19-65
+94        </activity>
+95        <activity android:name="com.common.activity.MyNews" >
+95-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:89:9-90:20
+95-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:89:19-60
+96        </activity>
+97        <activity android:name="com.common.activity.AddTiezi" >
+97-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:91:9-92:20
+97-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:91:19-62
+98        </activity>
+99        <activity android:name="com.common.activity.MyBaomingList" >
+99-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:93:9-94:20
+99-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:93:19-67
+100        </activity>
+101        <activity android:name="net.biotech.android.video.VideoPlayer" >
+101-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:95:9-96:20
+101-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:95:19-71
+102        </activity>
+103        <activity android:name="com.common.activity.UserRegisterActivity" >
+103-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:97:9-98:20
+103-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:97:19-74
+104        </activity>
+105        <activity android:name="com.common.activity.MyBlackList" >
+105-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:99:9-100:20
+105-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:99:19-65
+106        </activity>
+107        <activity android:name="com.zxing.activity.CaptureActivity" >
+107-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:101:9-102:20
+107-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:101:19-68
+108        </activity>
+109        <activity android:name="com.common.activity.TuijianList" >
+109-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:103:9-104:20
+109-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:103:19-65
+110        </activity>
+111        <activity android:name="com.common.activity.SignList" >
+111-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:105:9-106:20
+111-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:105:19-62
+112        </activity>
+113        <activity android:name="com.common.activity.TieziList" >
+113-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:107:9-108:20
+113-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:107:19-63
+114        </activity>
+115        <activity android:name="com.common.activity.JiudianList" >
+115-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:109:9-110:20
+115-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:109:19-65
+116        </activity>
+117        <activity android:name="com.common.activity.TypeList_" >
+117-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:111:9-112:20
+117-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:111:19-63
+118        </activity>
+119        <activity android:name="com.common.activity.ShetuanList" >
+119-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:113:9-114:20
+119-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:113:19-65
+120        </activity>
+121        <activity android:name="com.common.activity.MyFriends" >
+121-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:115:9-116:20
+121-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:115:19-63
+122        </activity>
+123        <activity android:name="com.common.activity.XinwenList" >
+123-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:117:9-118:20
+123-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:117:19-64
+124        </activity>
+125        <activity android:name="com.common.activity.AddPhoto" >
+125-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:119:9-120:20
+125-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:119:19-62
+126        </activity>
+127        <activity android:name="com.common.activity.FriendsAll" >
+127-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:121:9-122:20
+127-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:121:19-64
+128        </activity>
+129        <activity android:name="com.common.activity.HistoryCheckList" >
+129-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:123:9-124:20
+129-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:123:19-70
+130        </activity>
+131        <activity android:name="com.common.activity.HistoryVisitList" >
+131-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:125:9-126:20
+131-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:125:19-70
+132        </activity>
+133        <activity android:name="com.common.activity.AddCK" >
+133-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:127:9-128:20
+133-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:127:19-59
+134        </activity>
+135        <activity android:name="com.common.activity.ProjList" >
+135-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:129:9-130:20
+135-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:129:19-62
+136        </activity>
+137        <activity android:name="com.common.activity.AddProgress" >
+137-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:131:9-132:20
+137-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:131:19-65
+138        </activity>
+139        <activity android:name="com.common.activity.AddProj" >
+139-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:133:9-134:20
+139-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:133:19-61
+140        </activity>
+141        <activity android:name="com.common.activity.MyHuodongList" >
+141-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:135:9-136:20
+141-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:135:19-67
+142        </activity>
+143        <activity android:name="com.common.activity.UserProfileActivity" >
+143-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:137:9-138:20
+143-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:137:19-73
+144        </activity>
+145        <activity android:name="com.common.activity.OnlineCousel" >
+145-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:139:9-140:20
+145-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:139:19-66
+146        </activity>
+147        <activity android:name="com.common.activity.MyFolderDuanziList" >
+147-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:141:9-142:20
+147-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:141:19-72
+148        </activity>
+149        <activity android:name="com.common.activity.AddDuanziComments" >
+149-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:143:9-144:20
+149-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:143:19-71
+150        </activity>
+151        <activity android:name="com.common.activity.FaxianList" >
+151-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:145:9-146:20
+151-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:145:19-64
+152        </activity>
+153        <activity android:name="com.common.activity.MessageList" >
+153-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:147:9-148:20
+153-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:147:19-65
+154        </activity>
+155        <activity android:name="com.common.activity.AddHuodong" >
+155-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:149:9-150:20
+155-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:149:19-64
+156        </activity>
+157        <activity android:name="com.common.activity.JifenShopActivity" >
+157-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:151:9-152:20
+157-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:151:19-71
+158        </activity>
+159        <activity android:name="com.common.activity.AddGamePC" >
+159-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:153:9-154:20
+159-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:153:19-63
+160        </activity>
+161        <activity android:name="com.common.activity.InfoDetail" >
+161-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:155:9-156:20
+161-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:155:19-64
+162        </activity>
+163        <activity android:name="com.common.activity.GamePCMessage" >
+163-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:157:9-158:20
+163-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:157:19-67
+164        </activity>
+165        <activity android:name="com.common.activity.PictureList" >
+165-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:159:9-160:20
+165-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:159:19-65
+166        </activity>
+167        <activity android:name="com.common.activity.AddPictures" >
+167-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:161:9-162:20
+167-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:161:19-65
+168        </activity>
+169        <activity android:name="com.common.utils.YYRGSelectBaskImage" >
+169-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:163:9-164:20
+169-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:163:19-70
+170        </activity>
+171        <activity android:name="com.common.activity.MainFrame" >
+171-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:165:9-166:20
+171-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:165:19-63
+172        </activity>
+173        <activity android:name="com.common.activity.PictureMessage" >
+173-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:167:9-168:20
+173-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:167:19-68
+174        </activity>
+175        <activity android:name="com.common.activity.ExchangeList" >
+175-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:169:9-170:20
+175-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:169:19-66
+176        </activity>
+177        <activity android:name="com.common.activity.AddExchange" >
+177-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:171:9-172:20
+177-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:171:19-65
+178        </activity>
+179        <activity android:name="com.common.activity.ExchangeMessage" >
+179-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:173:9-174:20
+179-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:173:19-69
+180        </activity>
+181        <activity android:name="com.common.activity.Foundingfriends" >
+181-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:175:9-176:20
+181-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:175:19-69
+182        </activity>
+183        <activity android:name="com.common.activity.AddFriend" >
+183-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:177:9-178:20
+183-->E:\2022-2023\AS\A7736\reading_share_app\app\src\main\AndroidManifest.xml:177:19-63
+184        </activity>
+185    </application>
+186
+187</manifest>

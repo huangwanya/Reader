@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="GBK"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+
+
+
+
+	<bean id="commentsservice" class="service.impl.CommentsServiceImpl">
+		<property name="commentsdao" ref="commentsdao" />
+		<property name="userdao" ref="userdao" />
+		<property name="admindao" ref="admindao" />
+	</bean>
+	<bean id="userservice" class="service.impl.UserServiceImpl">
+		<property name="userdao" ref="userdao" />
+				<property name="commentsdao" ref="commentsdao" />
+				<property name="biotechdao" ref="biotechdao" />
+				
+	</bean>
+	<bean id="adminservice" class="service.impl.AdminServiceImpl">
+		<property name="admindao" ref="admindao" />
+	</bean>
+	<bean id="bioservice" class="service.impl.BiotechServiceImpl">
+		<property name="commentsdao" ref="commentsdao" />
+		<property name="biotechdao" ref="biotechdao" />
+		<property name="userdao" ref="userdao" />
+	</bean>
+</beans>

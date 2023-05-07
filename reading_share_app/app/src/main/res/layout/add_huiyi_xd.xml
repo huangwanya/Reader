@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical" >
+    <ScrollView 
+         android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+        >
+  <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/re1"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_gravity="center_vertical"
+        android:background="#009966"
+        android:orientation="horizontal"
+        android:paddingLeft="3.0dip"
+        android:paddingRight="3.0dip" >
+
+        <TextView
+            android:id="@+id/top_back"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/topback" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="添加阅读分享活动场地申请"
+            android:textColor="#ffffffff"
+            android:textSize="36px" />
+
+        <TextView
+            android:id="@+id/add_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="保存"
+            android:textColor="#ffffffff"
+            android:textSize="26px" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_selector"
+        android:padding="10dp" >
+
+        <TextView
+                   android:id="@+id/zuobiao"
+                   android:textColor="#333333"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="当前坐标"
+            android:textSize="32px" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_selector"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="申报团体名称："
+            android:textColor="#333333"
+            android:textSize="32px" />
+
+        <EditText
+            android:id="@+id/gamename"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/edittext_selector"
+            android:hint="名称"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textSize="32px" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@drawable/edittext_selector"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="阅读分享活动："
+            android:textColor="#333333"
+            android:textSize="32px" />
+
+        <Spinner
+            android:id="@+id/edittype"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/edittext_selector"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textSize="32px" />
+    </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_selector"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="时间："
+            android:textColor="#333333"
+            android:textSize="32px" />
+
+        <EditText
+            android:id="@+id/huodong_date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/edittext_selector"
+            android:hint="时间"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textSize="32px" />
+    </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_selector"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="地点："
+            android:textColor="#333333"
+            android:textSize="32px" />
+
+        <EditText
+            android:id="@+id/huodong_addr"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/edittext_selector"
+            android:hint="地点"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textSize="32px" />
+    </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_selector"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="负责人："
+            android:textColor="#333333"
+            android:textSize="32px" />
+
+        <EditText
+            android:id="@+id/fuzeren"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/edittext_selector"
+            android:hint="负责人"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textSize="32px" />
+    </LinearLayout>
+           <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_selector"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="联系电话："
+            android:textColor="#333333"
+            android:textSize="32px" />
+
+        <EditText
+            android:id="@+id/tel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/edittext_selector"
+            android:hint="电话"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textSize="32px" />
+    </LinearLayout>
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_selector"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="性质："
+            android:textColor="#333333"
+            android:textSize="32px" />
+
+        <Spinner
+            android:id="@+id/xingzhi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/edittext_selector"
+            android:entries="@array/xingzhi"
+            android:hint="电话"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textSize="32px" />
+    </LinearLayout>
+         <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_selector"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="是否需要海报："
+            android:textColor="#333333"
+            android:textSize="32px" />
+
+        <Spinner
+            android:id="@+id/ishaibao"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/edittext_selector"
+            android:entries="@array/ishaibao"
+            android:hint="电话"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textSize="32px" />
+    </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_selector"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="计划人数："
+            android:textColor="#333333"
+            android:textSize="32px" />
+
+        <EditText
+            android:id="@+id/huodong_count"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/edittext_selector"
+            android:hint="限定人数"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textSize="32px" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_selector"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="活动天数："
+            android:textColor="#333333"
+            android:textSize="32px" />
+
+        <EditText
+            android:id="@+id/hours"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/edittext_selector"
+            android:hint="会议活动天数"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textSize="32px" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_selector"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="1dp"
+            android:text="主要阅读分享活动内容描述"
+            android:textColor="#333333"
+            android:textSize="32px" />
+
+        <EditText
+            android:id="@+id/gamecontext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/edittext_selector"
+            android:gravity="top"
+            android:hint="阅读分享活动内容"
+            android:minLines="7"
+            android:padding="5dp"
+            android:textColor="#333333"
+            android:textSize="32px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_selector"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="1dp"
+            android:text="上传图片"
+            android:textColor="#333333"
+            android:textSize="32px" />
+             <ImageView
+                android:id="@+id/imageMyAvator"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:paddingLeft="35dip"
+                android:src="@drawable/add_image" />
+        
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

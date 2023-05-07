@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+     <RelativeLayout
+         android:id="@+id/re1"
+         android:layout_width="fill_parent"
+         android:layout_height="50.0dip"
+         android:layout_gravity="center_vertical"
+         android:background="#009966"
+         android:orientation="horizontal"
+         android:paddingLeft="3.0dip"
+         android:paddingRight="3.0dip" >
+
+         <ImageView
+             android:id="@+id/top_back"
+             android:layout_width="50px"
+             android:layout_height="50px"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:src="@drawable/icon_back_default" />
+
+         <TextView
+             android:id="@+id/textView2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:layout_gravity="center"
+             android:ellipsize="end"
+             android:gravity="center"
+             android:singleLine="true"
+             android:text="留言记录"
+             android:textColor="#ffffffff"
+             android:textSize="36px" />
+
+         <TextView
+             android:id="@+id/add_new_xd"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:padding="10dp"
+             android:textSize="26px"
+             android:textColor="@drawable/edittext_selector"
+             android:visibility="gone"
+             android:layout_alignParentRight="true"
+             android:text="新增" />
+     </RelativeLayout>
+
+
+    <!-- 输入框、留言按钮 -->
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:divider="#f0f0f0"
+        android:dividerHeight="3dp"></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CCCCCC"
+        android:layout_alignParentBottom='true'
+        android:focusable="false"
+        android:gravity="bottom"
+        android:id="@+id/commentLinear"
+        android:orientation="horizontal">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp">
+        <!-- 输入框 -->
+        <EditText
+            android:id="@+id/commentEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="100"
+            android:minHeight="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:inputType="textMultiLine"
+            android:gravity="left"
+            android:maxLines="6"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"/>
+        </android.support.design.widget.TextInputLayout>
+        <!-- 留言按钮 -->
+        <Button
+            android:id="@+id/commentButton"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:textColor="#333333"
+            android:text="发送"
+            android:layout_marginRight="10dp"
+            android:background="#FFFFFF"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+
+</LinearLayout>

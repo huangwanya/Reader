@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+     <RelativeLayout
+         android:id="@+id/re1"
+         android:layout_width="fill_parent"
+         android:layout_height="50.0dip"
+         android:layout_gravity="center_vertical"
+         android:background="#009966"
+         android:orientation="horizontal"
+         android:paddingLeft="3.0dip"
+         android:paddingRight="3.0dip" >
+
+         <TextView
+             android:id="@+id/top_back"
+             android:layout_width="50dp"
+             android:layout_height="30dp"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="10dp"
+             android:drawableLeft="@drawable/topback" />
+
+         <TextView
+             android:id="@+id/textView2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:layout_gravity="center"
+             android:ellipsize="end"
+             android:gravity="center"
+             android:singleLine="true"
+             android:text="阅读分享活动推荐"
+             android:textColor="#ffffffff"
+             android:textSize="36px" />
+
+         <TextView
+             android:id="@+id/add_new_xd"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:padding="10dp"
+             android:textSize="26px"
+             android:visibility="gone"
+             android:textColor="@drawable/edittext_selector"
+             android:layout_alignParentRight="true"
+             android:text="发帖" />
+     </RelativeLayout>
+
+     <ListView
+         android:id="@+id/listView1"
+         android:divider="#f0f0f0"
+         android:dividerHeight="3dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" >
+     </ListView>
+    
+
+</LinearLayout>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <ScrollView
+        android:id="@+id/scrollview_"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical" >
+     <RelativeLayout
+         android:id="@+id/re1"
+         android:layout_width="fill_parent"
+         android:layout_height="50.0dip"
+         android:layout_gravity="center_vertical"
+         android:background="#009966"
+         android:orientation="horizontal"
+         android:paddingLeft="3.0dip"
+         android:paddingRight="3.0dip" >
+
+         <TextView
+             android:id="@+id/top_back"
+             android:layout_width="50dp"
+             android:layout_height="30dp"
+             android:visibility="gone"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="10dp"
+             android:drawableLeft="@drawable/topback" />
+
+         <TextView
+             android:id="@+id/textView2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:layout_gravity="center"
+             android:ellipsize="end"
+             android:gravity="center"
+             android:singleLine="true"
+             android:text="首页"
+             android:textColor="#ffffffff"
+             android:textSize="36px" />
+
+
+         <ImageView
+             android:id="@+id/add_new_xd"
+             android:layout_width="50px"
+             android:layout_height="50px"
+             android:layout_alignParentRight="true"
+             android:layout_toRightOf="@+id/hot_title2"
+             android:layout_centerVertical="true"
+             android:src="@drawable/refresh_64" />
+     </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/fl_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/ll_point"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/viewpager"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:src="@drawable/point_gray" />
+    </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/hotlayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/fl_main"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <ImageView
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/hot_title"
+                    android:src="@drawable/car_logo" />
+
+                <TextView
+                    android:id="@+id/hot_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingLeft="5dp"
+                    android:text="@string/title1"
+                    android:textColor="#009966"
+                    android:textSize="32px" />
+            </RelativeLayout>
+     <GridView
+         android:id="@+id/listView1"
+         android:numColumns="3"
+         android:dividerHeight="3dp"
+         android:horizontalSpacing="10dp"
+         android:drawSelectorOnTop="false"
+         android:fadingEdge="none"
+         android:verticalSpacing="10dp"
+         android:divider="@drawable/product_detail_new_line"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" >
+     </GridView>
+            <RelativeLayout
+                android:id="@+id/hotlayout2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/listView1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <ImageView
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/hot_title2"
+                    android:src="@drawable/car_logo" />
+
+                <TextView
+                    android:id="@+id/hot_title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingLeft="5dp"
+                    android:text="@string/title2"
+                    android:textColor="#009966"
+                    android:textSize="32px" />
+
+                <ImageView
+                    android:id="@+id/clickmore2"
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/hot_title2"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="-2dp"
+                    android:layout_marginRight="2dp"
+
+                    android:src="@drawable/more_icon" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/listView2"
+                android:divider="@drawable/product_detail_new_line"
+                android:dividerHeight="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+
+            <RelativeLayout
+                android:id="@+id/hotlayout3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/listView1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <ImageView
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/hot_title3"
+                    android:src="@drawable/car_logo" />
+
+                <TextView
+                    android:id="@+id/hot_title3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingLeft="5dp"
+                    android:text="@string/title3"
+                    android:textColor="#009966"
+                    android:textSize="32px" />
+
+                <ImageView
+                    android:id="@+id/clickmore3"
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/hot_title3"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="-2dp"
+                    android:layout_marginRight="2dp"
+
+                    android:src="@drawable/more_icon" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/listView3"
+                android:divider="@drawable/product_detail_new_line"
+                android:dividerHeight="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+
+            <RelativeLayout
+                android:id="@+id/hotlayout4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/listView1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <ImageView
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/hot_title4"
+                    android:src="@drawable/car_logo" />
+
+                <TextView
+                    android:id="@+id/hot_title4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingLeft="5dp"
+                    android:text="@string/title4"
+                    android:textColor="#009966"
+                    android:textSize="32px" />
+
+                <ImageView
+                    android:id="@+id/clickmore4"
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/hot_title4"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="-2dp"
+                    android:layout_marginRight="2dp"
+
+                    android:src="@drawable/more_icon" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/listView4"
+                android:divider="@drawable/product_detail_new_line"
+                android:dividerHeight="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+    
+
+</LinearLayout>

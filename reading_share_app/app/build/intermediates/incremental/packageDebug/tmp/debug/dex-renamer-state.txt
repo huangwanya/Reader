@@ -1,0 +1,4 @@
+#Sat Feb 25 13:23:53 CST 2023
+base.0=E\:\\2022-2023\\AS\\A7736\\reading_share_app\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
